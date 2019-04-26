@@ -1,11 +1,17 @@
+{% extends 'base.html' %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    {% block title %}
+        Lista de Tarefas
+    {% endblock %}
 </head>
 <body>
-  <h1>Aqui é a lista de tarefas</h1>
+    {% block content %}
+       <h1>Aqui é a lista de tarefas</h1>
+    {% endblock %}
+
 
 </body>
 </html>

@@ -1,11 +1,16 @@
+{% extends 'base.html' %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    {% block title %}
+        Qual é o seu nome?
+    {% endblock %}
 </head>
 <body>
-  <h1>O seu nome é {{ nome }}</h1>
+     {% block content %}
+        <h1>O seu nome é {{ nome }}</h1>
+     {% endblock %}
 
 </body>
 </html>
