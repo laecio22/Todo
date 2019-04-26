@@ -1,2 +1,5 @@
 tenv/
 .idea/
+*.pyc
+* __pycache__/
+* migrations/
