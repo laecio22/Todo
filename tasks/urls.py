@@ -7,4 +7,5 @@ urlpatterns = [
     path('helloworld/', views.helloWorld),
     path('', views.taskList , name='task-list'),
     path('yourname/<str:name>', views.yourName, name='your-name'),
+    path('task/<int:id>', views.taskView, name = 'task-view'),
 ]
