@@ -2,7 +2,7 @@ from django.db import models
 
 class Task(models.Model):
     STATUS = (
-        ('doing','Realizada'),
+        ('doing','Realizando'),
         ('done', 'Não Realizada'),
     )
 

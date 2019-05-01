@@ -13,11 +13,11 @@ def taskView(request, id):
     return render(request, 'tasks/task.html', {'task': task})
 
 def newTask(request):
-
-    if request == "POST":
+    if request.method == "POST":
         form = TaskForm(request.POST)
         if form.is_valid():
             task = form.save(commit=False)
+            task.done = 'doing'
             task.save()
             return redirect('/')
     else:
