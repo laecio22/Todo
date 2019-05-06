@@ -1,11 +1,9 @@
-$(document).ready(
-    function () {
-        var deleteBtn = $('.delete-btn');
+  $(document).ready(function () {
+       var deleteBtn = $('.delete-btn');
 
-        $(deleteBtn).on('click' , function (e) {
+       $(deleteBtn).on('click' , function (e) {
 
             e.preventDefault();
-
             var delLink = $(this).attr('href');
             var  result = confirm('Quer deletar esta tarefa?');
 
@@ -13,7 +11,7 @@ $(document).ready(
                 window.location.href= delLink;
             }
 
-        })
 
+       });
 
-    });
+  });
